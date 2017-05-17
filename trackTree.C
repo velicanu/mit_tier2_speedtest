@@ -63,4 +63,7 @@ int main(int argc, char *argv[])
   t->Loop();
   end = clock();
   cout<<"Run 2: "<<(float)((end - start)/CLOCKS_PER_SEC)<<" s"<<endl;
+  t->Loop();
+  end = clock();
+  cout<<"Run 3: "<<(float)((end - start)/CLOCKS_PER_SEC)<<" s"<<endl;
 }
