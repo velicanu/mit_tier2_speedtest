@@ -55,14 +55,18 @@ int main(int argc, char *argv[])
   clock_t start;
   clock_t end;
   trackTree * t = new trackTree();
+
   start = clock();
   t->Loop();
   end = clock();
   cout<<"Run 1: "<<(float)((end - start)/CLOCKS_PER_SEC)<<" s"<<endl;
+
   start = clock();
   t->Loop();
   end = clock();
   cout<<"Run 2: "<<(float)((end - start)/CLOCKS_PER_SEC)<<" s"<<endl;
+
+  start = clock();
   t->Loop();
   end = clock();
   cout<<"Run 3: "<<(float)((end - start)/CLOCKS_PER_SEC)<<" s"<<endl;
